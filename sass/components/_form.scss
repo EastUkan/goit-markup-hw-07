@@ -1,0 +1,94 @@
+.modal-form {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+.form-wrapper {
+	position: relative;
+	margin-bottom: 28px;
+}
+.form-wrapper:nth-child(4) {
+	margin-bottom: 20px;
+}
+.form-input {
+	width: 100%;
+	padding: 12px 42px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	color: #757575;
+}
+.form-input:focus,
+.form-taxtarea:focus {
+	outline: none;
+	border-color: $accent-color;
+}
+.form-label {
+	position: absolute;
+
+	left: 42px;
+	top: 12px;
+
+	transition: transform $duration $timing-function;
+}
+.form-input:focus + .form-label {
+	color: $accent-color;
+	transform: translate(-25px, -33px);
+}
+.form-taxtarea:focus ~ .form-label {
+	transform: translateY(-30px);
+}
+.icon-input {
+	position: absolute;
+	left: 18px;
+	top: 14px;
+}
+.form-input:focus ~ svg {
+	fill: $accent-color;
+}
+
+.form-taxtarea {
+	min-height: 120px;
+	width: 100%;
+	padding: 12px 16px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	color: #757575;
+	resize: none;
+}
+.form-taxtarea + label {
+	left: 16px;
+}
+.form-taxtarea:focus ~ label {
+	color: $accent-color;
+	transform: translate(-18px, -33px);
+}
+.checkbox-field,
+.subscribe-label {
+	display: inline-flex;
+	align-items: center;
+}
+
+.agreement-link {
+	margin-left: 5px;
+	color: $accent-color;
+}
+
+.checkbox ~ .subscribe-label:before {
+	content: "";
+	display: block;
+	margin-left: 13px;
+	margin-right: 8px;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #212121;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.checkbox:checked ~ .subscribe-label:before {
+	background-color: $accent-color;
+	border-color: transparent;
+	background-image: url(../images/check.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}

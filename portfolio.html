@@ -12,8 +12,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
 		/>
-
-		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/portfolio.min.css" />
 	</head>
 	<body>
 		<!-- Шапка сайта -->
@@ -64,7 +63,7 @@
 			<!-- Наши работы -->
 			<section class="section-portfolio">
 				<div class="container">
-					<h1 class="main-caption">Портфолио(скрытый заголовок)</h1>
+					<h1 class="visually-hidden">Портфолио(скрытый заголовок)</h1>
 
 					<!-- Кнопки -->
 
@@ -217,7 +216,7 @@
 					<div class="adress-atem">
 						<a class="logo logo-footer" href="./index.html">
 							<span class="logo-subject">Web</span>
-							<span class="logo-subject-footer">Studio</span>
+							<span class="logo-footer-subject">Studio</span>
 						</a>
 
 						<address class="footer-address">
@@ -268,13 +267,13 @@
 					</div>
 					<div class="subscribe-conteiner">
 						<b class="footer-social-title">Подпишитесь на рассылку</b>
-						<form class="subscribe-form" action="">
-							<label for="">
-								<input class="subscribe-imput" type="email" name="email" placeholder="E-mail" />
+						<form class="subscribe-form">
+							<label for="email">
+								<input class="subscribe-imput" id="email" type="email" name="email" placeholder="E-mail" />
 							</label>
 							<button class="footer-button">
 								Подписаться
-								<svg class="footer-icon-button">
+								<svg class="footer-button-icon">
 									<use href="./images/sprite.svg#icon-icon-send"></use>
 								</svg>
 							</button>

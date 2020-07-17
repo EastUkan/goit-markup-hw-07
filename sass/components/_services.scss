@@ -1,0 +1,50 @@
+/* Сфера услуг */
+
+.section-services {
+	padding-bottom: 94px;
+}
+
+.section-title {
+	margin-bottom: 50px;
+
+	text-align: center;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+
+	color: $title-text-color;
+}
+
+.services-title {
+	margin-bottom: 50px;
+}
+.services-list {
+	display: flex;
+	justify-content: center;
+
+	&-title {
+		position: absolute;
+		width: 100%;
+		bottom: 0px;
+		padding-top: 27px;
+
+		padding-bottom: 27px;
+
+		font-weight: 700;
+		font-size: 14px;
+		text-transform: uppercase;
+		text-align: center;
+
+		background: rgba(47, 48, 58, 0.8);
+		color: $primary-white-color;
+	}
+}
+
+.services-list-item {
+	position: relative;
+	width: calc((100% - 30px * 2) / 3);
+
+	& + & {
+		margin-left: 30px;
+	}
+}
