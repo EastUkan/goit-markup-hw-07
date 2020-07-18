@@ -7,10 +7,11 @@
 .form-wrapper {
 	position: relative;
 	margin-bottom: 28px;
+	&:nth-child(4) {
+		margin-bottom: 20px;
+	}
 }
-.form-wrapper:nth-child(4) {
-	margin-bottom: 20px;
-}
+
 .form-input {
 	width: 100%;
 	padding: 12px 42px;
@@ -35,16 +36,14 @@
 	color: $accent-color;
 	transform: translate(-25px, -33px);
 }
-.form-taxtarea:focus ~ .form-label {
-	transform: translateY(-30px);
-}
+
 .icon-input {
 	position: absolute;
 	left: 18px;
 	top: 14px;
-}
-.form-input:focus ~ svg {
-	fill: $accent-color;
+	&:focus ~ svg {
+		fill: $accent-color;
+	}
 }
 
 .form-taxtarea {
@@ -55,14 +54,18 @@
 	border-radius: 4px;
 	color: #757575;
 	resize: none;
+	& + label {
+		left: 16px;
+	}
+	&:focus ~ label {
+		color: $accent-color;
+		transform: translate(-18px, -33px);
+	}
+	&:focus ~ .form-label {
+		transform: translateY(-30px);
+	}
 }
-.form-taxtarea + label {
-	left: 16px;
-}
-.form-taxtarea:focus ~ label {
-	color: $accent-color;
-	transform: translate(-18px, -33px);
-}
+
 .checkbox-field,
 .subscribe-label {
 	display: inline-flex;

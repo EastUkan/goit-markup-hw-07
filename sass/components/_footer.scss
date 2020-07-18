@@ -72,14 +72,14 @@
 
 .footer-socials-link {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-decoration: none;
 	height: 44px;
 	width: 44px;
 	margin-top: 20px;
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.1);
-	justify-content: center;
-	align-items: center;
 
 	transition: background-color $duration $timing-function;
 

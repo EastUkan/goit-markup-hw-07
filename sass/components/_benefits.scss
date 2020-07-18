@@ -1,7 +1,6 @@
 /* преимущества */
 .section-benefits {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	@extend %section;
 }
 
 .benefits-list {

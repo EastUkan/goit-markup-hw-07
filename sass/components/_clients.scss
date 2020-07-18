@@ -1,7 +1,6 @@
 /* Клиенты */
 .section-clients {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	@extend %section;
 }
 
 .clients-title {

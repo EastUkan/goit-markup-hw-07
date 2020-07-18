@@ -1,8 +1,7 @@
 /* команда */
 
 .section-team {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	@extend %section;
 	background-color: #f5f4fa;
 }
 .team-title {
