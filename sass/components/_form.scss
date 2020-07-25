@@ -41,9 +41,9 @@
 	position: absolute;
 	left: 18px;
 	top: 14px;
-	&:focus ~ svg {
-		fill: $accent-color;
-	}
+}
+.form-input:focus ~ svg {
+	fill: $accent-color;
 }
 
 .form-taxtarea {

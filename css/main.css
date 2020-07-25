@@ -822,7 +822,7 @@ p {
   top: 14px;
 }
 
-.icon-input:focus ~ svg {
+.form-input:focus ~ svg {
   fill: #2196f3;
 }
 
